@@ -1,12 +1,12 @@
 Model {
-  Name			  "MotoSim"
+  Name			  "SimBAlink_CL"
   Version		  8.9
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.521"
+    ComputedModelVersion    "1.523"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -55,7 +55,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, 33.0, 1455.0, 935.0]
+      Location		      [-7.0, 40.0, 733.0, 927.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -80,16 +80,16 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2653"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.55]
-	  Offset		  [0.0, -4.5474735088646412e-13]
+	  Offset		  [0.0, -5.6843418860808015e-13]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2581"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.25]
 	  Offset		  [-108.07532375106462, -2.6272194562708364]
 	}
@@ -98,7 +98,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1290"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -107,9 +107,9 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "410"
-	  Extents		  [2104.0, 1149.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-871.18897808973566, -513.3836151244609]
+	  Extents		  [2160.0, 1440.0]
+	  ZoomFactor		  [0.59999999999999987]
+	  Offset		  [-871.18897808973566, -513.383615124461]
 	}
 	Object {
 	  $ObjectID		  10
@@ -118,14 +118,14 @@ Model {
 	  LoadSaveID		  "3011"
 	  Extents		  [2104.0, 1149.0]
 	  ZoomFactor		  [0.8]
-	  Offset		  [-428.10415930549294, -91.166666666666686]
+	  Offset		  [-428.10415930549306, -91.166666666666913]
 	}
 	Object {
 	  $ObjectID		  11
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2400"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.75]
 	  Offset		  [-141.02536122920935, -49.476190476190482]
 	}
@@ -134,22 +134,22 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2594"
-	  Extents		  [2104.0, 1149.0]
-	  ZoomFactor		  [1.56]
-	  Offset		  [-14.644631410256409, 0.0]
+	  Extents		  [2160.0, 1440.0]
+	  ZoomFactor		  [1.5599999999999998]
+	  Offset		  [-14.644631410256522, -5.6843418860808015e-14]
 	}
 	Object {
 	  $ObjectID		  13
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1998"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-177.64062178134964, 85.08333333333286]
+	  Offset		  [-177.64062178134964, 85.0833333333328]
 	}
 	Object {
 	  $ObjectID		  14
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [2104.0, 1149.0]
@@ -163,14 +163,14 @@ Model {
 	  LoadSaveID		  "2559"
 	  Extents		  [2104.0, 1149.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [105.79735183426521, -123.03290013996258]
+	  Offset		  [-15.535981499068113, 54.967099860037429]
 	}
 	Object {
 	  $ObjectID		  16
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "265"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [310.87852552541563, -85.018648079144384]
 	}
@@ -179,7 +179,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2305"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -188,7 +188,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2342"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0900000000000003]
 	  Offset		  [-104.14866391037469, -141.18888515201678]
 	}
@@ -197,25 +197,25 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2275"
-	  Extents		  [2104.0, 1149.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-142.14903521529959, -279.65020599795389]
+	  Extents		  [2160.0, 1440.0]
+	  ZoomFactor		  [0.59999999999999987]
+	  Offset		  [-142.14903521529959, -279.650205997954]
 	}
 	Object {
 	  $ObjectID		  20
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "3024"
-	  Extents		  [2104.0, 1149.0]
-	  ZoomFactor		  [0.71558639002969371]
-	  Offset		  [-453.32521366920923, -224.76675532653212]
+	  Extents		  [1022.0, 1137.0]
+	  ZoomFactor		  [0.49999999999999994]
+	  Offset		  [-208.22922294540967, -433.10555380107081]
 	}
 	Object {
 	  $ObjectID		  21
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2015"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -226,14 +226,14 @@ Model {
 	  LoadSaveID		  "257"
 	  Extents		  [2104.0, 1149.0]
 	  ZoomFactor		  [0.8]
-	  Offset		  [-4.5474735088646412e-13, -7.9580786405131221e-13]
+	  Offset		  [-5.6843418860808015e-13, -1.0231815394945443e-12]
 	}
 	Object {
 	  $ObjectID		  23
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2580"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.25]
 	  Offset		  [0.0, 0.0]
 	}
@@ -242,16 +242,16 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2602"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.5]
-	  Offset		  [-87.200000000000273, -108.98908948167853]
+	  Offset		  [-87.200000000000273, -108.98908948167855]
 	}
 	Object {
 	  $ObjectID		  25
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2265"
-	  Extents		  [2104.0, 1149.0]
+	  Extents		  [2160.0, 1440.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -262,7 +262,7 @@ Model {
 	  LoadSaveID		  "3603"
 	  Extents		  [2104.0, 1149.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-408.72005099652193, -161.45568970569767]
+	  Offset		  [-350.45445104198416, 4.4088435367112311]
 	}
 	PropName		"EditorsInfo"
       }
@@ -284,10 +284,10 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAACSAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAPQD///8AAAhwAAAE0AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAPQD///8AAAQ2AAAExAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACp/////wAAAAAAAAAA/////wEAAAEu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAHX/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAQy/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAP1/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
@@ -298,9 +298,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "bring"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Aug 27 11:38:40 2017"
-  RTWModifiedTimeStamp	  425734719
-  ModelVersionFormat	  "1.%<AutoIncrement:521>"
+  LastModifiedDate	  "Mon Aug 28 09:47:41 2017"
+  RTWModifiedTimeStamp	  425814454
+  ModelVersionFormat	  "1.%<AutoIncrement:523>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -352,11 +352,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    28
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "MotoSim"
+    model_		    "SimBAlink_CL"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "MotoSim"
+      Cell		      "SimBAlink_CL"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1517,7 +1517,7 @@ Model {
     }
   }
   System {
-    Name		    "MotoSim"
+    Name		    "SimBAlink_CL"
     Location		    [-7, 33, 1448, 968]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -1533,7 +1533,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "3701"
+    SIDHighWatermark	    "3936"
     Block {
       BlockType		      Display
       Name		      "\n"
@@ -5825,7 +5825,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "1478::2829"
-		    Tag			    "Stateflow S-Function MotoSim 3"
+		    Tag			    "Stateflow S-Function SimBAlink_CL 3"
 		    Ports		    [3, 4]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    53
@@ -9547,8 +9547,8 @@ Model {
 	$ObjectID		69
 	$ClassName		"Simulink.Mask"
 	Type			"Simulation Options"
+	Initialization		"Initialize_Sim"
 	Display			"text(.5,.5,'\\fontsize{10}{\\bfSimulation Settings}', 'hor','center','texmode','on');\n"
-	RunInitForIconRedraw	"on"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -9575,9 +9575,7 @@ Model {
 	    }
 	    Name		    "DRIV_Cycle"
 	    Prompt		    "Driving Cycle"
-	    Value		    "FUDS"
-	    Enabled		    "off"
-	    Visible		    "off"
+	    Value		    "US06_City_Cycle"
 	  }
 	  Object {
 	    $ObjectID		    71
@@ -9665,8 +9663,6 @@ Model {
 	    Name		    "EM_MC_Selection"
 	    Prompt		    "Motor-MC Selection"
 	    Value		    "emrax268_PM150DZR"
-	    Enabled		    "off"
-	    Visible		    "off"
 	  }
 	  Object {
 	    $ObjectID		    81
@@ -9681,8 +9677,6 @@ Model {
 	    Name		    "CELL_Selection"
 	    Prompt		    "Battery Cell Selection"
 	    Value		    "LiFePo4_generic"
-	    Enabled		    "off"
-	    Visible		    "off"
 	  }
 	  Object {
 	    $ObjectID		    82
@@ -9727,8 +9721,6 @@ Model {
 	    Name		    "ambTemp"
 	    Prompt		    "Ambient Temperature (C)"
 	    Value		    "20"
-	    Enabled		    "off"
-	    Visible		    "off"
 	  }
 	  Object {
 	    $ObjectID		    87
@@ -9953,7 +9945,7 @@ Model {
 	  Name			  " 1"
 	  SID			  "3604"
 	  Ports			  [1]
-	  Position		  [415, 309, 545, 341]
+	  Position		  [400, 329, 530, 361]
 	  ZOrder		  20
 	  BackgroundColor	  "lightBlue"
 	  ShowName		  off
@@ -9966,7 +9958,7 @@ Model {
 	  Name			  " 4"
 	  SID			  "3605"
 	  Ports			  [1]
-	  Position		  [615, 474, 745, 506]
+	  Position		  [600, 494, 730, 526]
 	  ZOrder		  3
 	  BackgroundColor	  "lightBlue"
 	  ShowName		  off
@@ -9992,7 +9984,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant1"
 	  SID			  "3607"
-	  Position		  [45, 441, 120, 479]
+	  Position		  [30, 461, 105, 499]
 	  ZOrder		  1
 	  ShowName		  off
 	  Value			  "soc0"
@@ -10025,7 +10017,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant7"
 	  SID			  "3610"
-	  Position		  [45, 396, 120, 434]
+	  Position		  [30, 416, 105, 454]
 	  ZOrder		  -1
 	  ShowName		  off
 	  Value			  "Stoptime"
@@ -10062,7 +10054,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto1"
 	  SID			  "3613"
-	  Position		  [425, 446, 560, 474]
+	  Position		  [410, 466, 545, 494]
 	  ZOrder		  2
 	  BackgroundColor	  "orange"
 	  ShowName		  off
@@ -10074,7 +10066,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto2"
 	  SID			  "3614"
-	  Position		  [425, 401, 560, 429]
+	  Position		  [410, 421, 545, 449]
 	  ZOrder		  -3
 	  BackgroundColor	  "orange"
 	  ShowName		  off
@@ -10119,7 +10111,7 @@ Model {
 	  Name			  "Road and Enviorment"
 	  SID			  "3011"
 	  Ports			  []
-	  Position		  [630, 205, 842, 289]
+	  Position		  [635, 125, 817, 149]
 	  ZOrder		  55
 	  DropShadow		  on
 	  ShowName		  off
@@ -10165,6 +10157,15 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "3702"
+	      Position		      [60, 273, 185, 307]
+	      ZOrder		      2
+	      ShowName		      off
+	      Value		      "ambTemp"
+	    }
+	    Block {
+	      BlockType		      Constant
 	      Name		      "Constant4"
 	      SID		      "3015"
 	      Position		      [60, 93, 95, 127]
@@ -10198,6 +10199,18 @@ Model {
 	      BackgroundColor	      "orange"
 	      ShowName		      off
 	      GotoTag		      "Row_Air"
+	      IconDisplay	      "Tag and signal name"
+	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto2"
+	      SID		      "3703"
+	      Position		      [330, 276, 510, 304]
+	      ZOrder		      1
+	      BackgroundColor	      "orange"
+	      ShowName		      off
+	      GotoTag		      "ambTemp"
 	      IconDisplay	      "Tag and signal name"
 	      TagVisibility	      "global"
 	    }
@@ -10252,6 +10265,13 @@ Model {
 	      DstBlock		      "Goto5"
 	      DstPort		      1
 	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Goto2"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Block {
@@ -10270,7 +10290,7 @@ Model {
 	  Name			  "Vehicle Parameters"
 	  SID			  "3024"
 	  Ports			  []
-	  Position		  [633, 83, 840, 158]
+	  Position		  [633, 83, 815, 103]
 	  ZOrder		  54
 	  DropShadow		  on
 	  ShowName		  off
@@ -10287,7 +10307,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Vehicle Parameters"
-	    Location		    [-7, 33, 1448, 968]
+	    Location		    [-7, 40, 726, 967]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -10300,30 +10320,38 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "72"
+	    ZoomFactor		    "50"
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant1"
 	      SID		      "3455"
-	      Position		      [20, 611, 140, 639]
+	      Position		      [445, 181, 565, 209]
 	      ZOrder		      28
 	      ShowName		      off
 	      Value		      "EM.torqueConstant"
+	      Port {
+		PortNumber		1
+		Name			"NMperA"
+	      }
 	    }
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant10"
 	      SID		      "3369"
-	      Position		      [595, 221, 715, 249]
+	      Position		      [450, 456, 570, 484]
 	      ZOrder		      14
 	      ShowName		      off
-	      Value		      "MC.coolingSysPwr"
+	      Value		      "MC.csHeatCap"
+	      Port {
+		PortNumber		1
+		Name			"MC cooling system heat capacity"
+	      }
 	    }
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant11"
 	      SID		      "3370"
-	      Position		      [595, 148, 775, 172]
+	      Position		      [450, 383, 630, 407]
 	      ZOrder		      16
 	      ShowName		      off
 	      Value		      "MC.thermalResistance"
@@ -10332,7 +10360,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant12"
 	      SID		      "3448"
-	      Position		      [595, 371, 715, 399]
+	      Position		      [-145, 286, -25, 314]
 	      ZOrder		      22
 	      ShowName		      off
 	      Value		      "cellParallelCount"
@@ -10341,7 +10369,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant13"
 	      SID		      "3449"
-	      Position		      [595, 298, 775, 322]
+	      Position		      [-145, 213, 35, 237]
 	      ZOrder		      24
 	      ShowName		      off
 	      Value		      "cellSeriesCount"
@@ -10350,7 +10378,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant14"
 	      SID		      "3013"
-	      Position		      [10, 101, 100, 129]
+	      Position		      [-845, -94, -755, -66]
 	      ZOrder		      26
 	      ShowName		      off
 	      Value		      "0.013"
@@ -10363,7 +10391,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant15"
 	      SID		      "3467"
-	      Position		      [595, 521, 715, 549]
+	      Position		      [-145, 431, -25, 459]
 	      ZOrder		      31
 	      ShowName		      off
 	      Value		      "FrontSprocket_toothCt"
@@ -10372,7 +10400,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant16"
 	      SID		      "3468"
-	      Position		      [595, 676, 715, 704]
+	      Position		      [-835, -169, -715, -141]
 	      ZOrder		      32
 	      ShowName		      off
 	      Value		      "0.95"
@@ -10381,7 +10409,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant17"
 	      SID		      "3469"
-	      Position		      [595, 591, 715, 619]
+	      Position		      [-145, 501, -25, 529]
 	      ZOrder		      33
 	      ShowName		      off
 	      Value		      "RearSprocket_toothCt"
@@ -10390,7 +10418,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant18"
 	      SID		      "3478"
-	      Position		      [600, -46, 705, -14]
+	      Position		      [-145, 69, -40, 101]
 	      ZOrder		      42
 	      ShowName		      off
 	      Value		      "regenPct"
@@ -10399,7 +10427,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant19"
 	      SID		      "3472"
-	      Position		      [600, 9, 705, 41]
+	      Position		      [-145, 124, -40, 156]
 	      ZOrder		      36
 	      ShowName		      off
 	      Value		      "maxBrakeTorque"
@@ -10408,7 +10436,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant2"
 	      SID		      "3026"
-	      Position		      [10, 156, 100, 194]
+	      Position		      [-160, -154, -70, -116]
 	      ZOrder		      -2
 	      ShowName		      off
 	      Value		      "CdA"
@@ -10421,16 +10449,52 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant20"
 	      SID		      "3487"
-	      Position		      [595, 446, 715, 474]
+	      Position		      [-145, 361, -25, 389]
 	      ZOrder		      45
 	      ShowName		      off
 	      Value		      "cellCapacity"
 	    }
 	    Block {
 	      BlockType		      Constant
+	      Name		      "Constant21"
+	      SID		      "3926"
+	      Position		      [425, -299, 545, -271]
+	      ZOrder		      47
+	      ShowName		      off
+	      Value		      "EM.N_RPM"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant22"
+	      SID		      "3928"
+	      Position		      [430, -214, 550, -186]
+	      ZOrder		      49
+	      ShowName		      off
+	      Value		      "EM.T_min_Peak"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant23"
+	      SID		      "3930"
+	      Position		      [435, -119, 555, -91]
+	      ZOrder		      51
+	      ShowName		      off
+	      Value		      "EM.T_max_Peak"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant24"
+	      SID		      "3932"
+	      Position		      [445, 246, 565, 274]
+	      ZOrder		      53
+	      ShowName		      off
+	      Value		      "EM.kv"
+	    }
+	    Block {
+	      BlockType		      Constant
 	      Name		      "Constant3"
 	      SID		      "3027"
-	      Position		      [25, 241, 145, 269]
+	      Position		      [-145, -69, -25, -41]
 	      ZOrder		      -3
 	      ShowName		      off
 	      Value		      "TIRE_radius"
@@ -10443,7 +10507,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant4"
 	      SID		      "3347"
-	      Position		      [15, 386, 135, 414]
+	      Position		      [440, -44, 560, -16]
 	      ZOrder		      4
 	      ShowName		      off
 	      Value		      "EM.eff"
@@ -10452,7 +10516,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant5"
 	      SID		      "3349"
-	      Position		      [25, 316, 145, 344]
+	      Position		      [-145, 6, -25, 34]
 	      ZOrder		      5
 	      ShowName		      off
 	      Value		      "TIRE_radius"
@@ -10465,16 +10529,20 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant6"
 	      SID		      "3364"
-	      Position		      [15, 531, 135, 559]
+	      Position		      [440, 101, 560, 129]
 	      ZOrder		      8
 	      ShowName		      off
-	      Value		      "EM.coolingSysPwr"
+	      Value		      "EM.csHeatCap"
+	      Port {
+		PortNumber		1
+		Name			"EM cooling system heat capacity"
+	      }
 	    }
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant7"
 	      SID		      "3366"
-	      Position		      [15, 456, 135, 484]
+	      Position		      [440, 26, 560, 54]
 	      ZOrder		      10
 	      ShowName		      off
 	      Value		      "EM.thermalResistance"
@@ -10483,7 +10551,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant8"
 	      SID		      "3368"
-	      Position		      [595, 76, 715, 104]
+	      Position		      [450, 311, 570, 339]
 	      ZOrder		      12
 	      ShowName		      off
 	      Value		      "MC.eff"
@@ -10492,7 +10560,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant9"
 	      SID		      "3028"
-	      Position		      [20, 29, 125, 61]
+	      Position		      [-150, -216, -45, -184]
 	      ZOrder		      -4
 	      ShowName		      off
 	      Value		      "M"
@@ -10502,7 +10570,7 @@ Model {
 	      Name		      "Divide"
 	      SID		      "3470"
 	      Ports		      [2, 1]
-	      Position		      [785, 552, 815, 583]
+	      Position		      [45, 462, 75, 493]
 	      ZOrder		      34
 	      Inputs		      "/*"
 	      InputSameDT	      off
@@ -10514,7 +10582,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto"
 	      SID		      "3029"
-	      Position		      [320, 161, 455, 189]
+	      Position		      [150, -149, 285, -121]
 	      ZOrder		      -5
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10526,7 +10594,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto1"
 	      SID		      "3456"
-	      Position		      [300, 602, 480, 648]
+	      Position		      [725, 172, 905, 218]
 	      ZOrder		      27
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10538,7 +10606,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto10"
 	      SID		      "3373"
-	      Position		      [875, 137, 1055, 183]
+	      Position		      [730, 372, 910, 418]
 	      ZOrder		      15
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10550,7 +10618,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto11"
 	      SID		      "3450"
-	      Position		      [875, 287, 1055, 333]
+	      Position		      [135, 202, 315, 248]
 	      ZOrder		      23
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10562,7 +10630,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto12"
 	      SID		      "3451"
-	      Position		      [875, 362, 1055, 408]
+	      Position		      [135, 277, 315, 323]
 	      ZOrder		      21
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10574,7 +10642,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto13"
 	      SID		      "3019"
-	      Position		      [330, 96, 510, 124]
+	      Position		      [-525, -99, -345, -71]
 	      ZOrder		      25
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10586,7 +10654,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto14"
 	      SID		      "3465"
-	      Position		      [890, 547, 1070, 593]
+	      Position		      [150, 457, 330, 503]
 	      ZOrder		      29
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10598,7 +10666,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto15"
 	      SID		      "3466"
-	      Position		      [890, 667, 1070, 713]
+	      Position		      [-540, -178, -360, -132]
 	      ZOrder		      30
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10610,7 +10678,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto16"
 	      SID		      "3474"
-	      Position		      [900, 9, 1030, 41]
+	      Position		      [155, 124, 285, 156]
 	      ZOrder		      38
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10622,7 +10690,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto17"
 	      SID		      "3479"
-	      Position		      [900, -46, 1030, -14]
+	      Position		      [155, 69, 285, 101]
 	      ZOrder		      43
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10634,7 +10702,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto18"
 	      SID		      "3488"
-	      Position		      [875, 437, 1055, 483]
+	      Position		      [135, 352, 315, 398]
 	      ZOrder		      44
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10644,9 +10712,21 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Goto
+	      Name		      "Goto19"
+	      SID		      "3927"
+	      Position		      [705, -298, 890, -272]
+	      ZOrder		      46
+	      BackgroundColor	      "orange"
+	      ShowName		      off
+	      GotoTag		      "EM_N_RPM"
+	      IconDisplay	      "Tag and signal name"
+	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      Goto
 	      Name		      "Goto2"
 	      SID		      "3031"
-	      Position		      [320, 31, 455, 59]
+	      Position		      [150, -214, 285, -186]
 	      ZOrder		      -7
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10656,9 +10736,45 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Goto
+	      Name		      "Goto20"
+	      SID		      "3929"
+	      Position		      [710, -213, 895, -187]
+	      ZOrder		      48
+	      BackgroundColor	      "orange"
+	      ShowName		      off
+	      GotoTag		      "EM_T_min_Peak"
+	      IconDisplay	      "Tag and signal name"
+	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto21"
+	      SID		      "3931"
+	      Position		      [715, -118, 900, -92]
+	      ZOrder		      50
+	      BackgroundColor	      "orange"
+	      ShowName		      off
+	      GotoTag		      "EM_T_max_Peak"
+	      IconDisplay	      "Tag and signal name"
+	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto22"
+	      SID		      "3933"
+	      Position		      [725, 247, 910, 273]
+	      ZOrder		      52
+	      BackgroundColor	      "orange"
+	      ShowName		      off
+	      GotoTag		      "EM_kv"
+	      IconDisplay	      "Tag and signal name"
+	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      Goto
 	      Name		      "Goto3"
 	      SID		      "3032"
-	      Position		      [295, 232, 475, 278]
+	      Position		      [125, -78, 305, -32]
 	      ZOrder		      -8
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10670,7 +10786,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto4"
 	      SID		      "3348"
-	      Position		      [295, 377, 475, 423]
+	      Position		      [720, -43, 905, -17]
 	      ZOrder		      3
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10682,7 +10798,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto5"
 	      SID		      "3350"
-	      Position		      [295, 307, 475, 353]
+	      Position		      [125, -3, 305, 43]
 	      ZOrder		      6
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10694,7 +10810,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto6"
 	      SID		      "3365"
-	      Position		      [295, 522, 475, 568]
+	      Position		      [720, 92, 995, 138]
 	      ZOrder		      7
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10706,7 +10822,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto7"
 	      SID		      "3367"
-	      Position		      [295, 447, 475, 493]
+	      Position		      [720, 17, 900, 63]
 	      ZOrder		      9
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10718,7 +10834,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto8"
 	      SID		      "3371"
-	      Position		      [875, 67, 1055, 113]
+	      Position		      [730, 302, 910, 348]
 	      ZOrder		      11
 	      BackgroundColor	      "orange"
 	      ShowName		      off
@@ -10730,13 +10846,52 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto9"
 	      SID		      "3372"
-	      Position		      [875, 212, 1055, 258]
+	      Position		      [760, 456, 1090, 484]
 	      ZOrder		      13
 	      BackgroundColor	      "orange"
 	      ShowName		      off
 	      GotoTag		      "controller_coolPower"
 	      IconDisplay	      "Tag and signal name"
 	      TagVisibility	      "global"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace"
+	      SID		      "3934"
+	      Ports		      [1]
+	      Position		      [765, -350, 825, -320]
+	      ZOrder		      54
+	      VariableName	      "EM_N_RPM"
+	      MaxDataPoints	      "inf"
+	      Save2DSignal	      "3-D array (concatenate along third dimension)"
+	      FixptAsFi		      on
+	      SampleTime	      "-1"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace1"
+	      SID		      "3935"
+	      Ports		      [1]
+	      Position		      [770, -260, 830, -230]
+	      ZOrder		      55
+	      VariableName	      "EM_T_min_Peak"
+	      MaxDataPoints	      "inf"
+	      Save2DSignal	      "3-D array (concatenate along third dimension)"
+	      FixptAsFi		      on
+	      SampleTime	      "-1"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace2"
+	      SID		      "3936"
+	      Ports		      [1]
+	      Position		      [775, -170, 835, -140]
+	      ZOrder		      56
+	      VariableName	      "EM_T_max_Peak"
+	      MaxDataPoints	      "inf"
+	      Save2DSignal	      "3-D array (concatenate along third dimension)"
+	      FixptAsFi		      on
+	      SampleTime	      "-1"
 	    }
 	    Line {
 	      Name		      "drag coefficient"
@@ -10780,14 +10935,18 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
+	      Name		      "EM cooling system heat capacity"
 	      ZOrder		      7
+	      Labels		      [1, 1]
 	      SrcBlock		      "Constant6"
 	      SrcPort		      1
 	      DstBlock		      "Goto6"
 	      DstPort		      1
 	    }
 	    Line {
+	      Name		      "MC cooling system heat capacity"
 	      ZOrder		      8
+	      Labels		      [1, 1]
 	      SrcBlock		      "Constant10"
 	      SrcPort		      1
 	      DstBlock		      "Goto9"
@@ -10832,7 +10991,9 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
+	      Name		      "NMperA"
 	      ZOrder		      14
+	      Labels		      [1, 1]
 	      SrcBlock		      "Constant1"
 	      SrcPort		      1
 	      DstBlock		      "Goto1"
@@ -10895,6 +11056,64 @@ Model {
 	      SrcBlock		      "Constant9"
 	      SrcPort		      1
 	      DstBlock		      "Goto2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      29
+	      SrcBlock		      "Constant21"
+	      SrcPort		      1
+	      Points		      [73, 0]
+	      Branch {
+		ZOrder			34
+		Points			[0, -50]
+		DstBlock		"To Workspace"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			33
+		DstBlock		"Goto19"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "Constant22"
+	      SrcPort		      1
+	      Points		      [74, 0]
+	      Branch {
+		ZOrder			36
+		Points			[0, -45]
+		DstBlock		"To Workspace1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			35
+		DstBlock		"Goto20"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      31
+	      SrcBlock		      "Constant23"
+	      SrcPort		      1
+	      Points		      [71, 0]
+	      Branch {
+		ZOrder			38
+		Points			[0, -50]
+		DstBlock		"To Workspace2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			37
+		DstBlock		"Goto21"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      32
+	      SrcBlock		      "Constant24"
+	      SrcPort		      1
+	      DstBlock		      "Goto22"
 	      DstPort		      1
 	    }
 	  }
@@ -12275,6 +12494,7 @@ Model {
       HorizontalAlignment     "left"
       VerticalAlignment	      "top"
       Interpreter	      "rich"
+      ZOrder		      -1
     }
     Annotation {
       SID		      "3560"
@@ -12321,7 +12541,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "MotoSim"
+    name		    "SimBAlink_CL"
     created		    "29-Oct-2012 11:58:41"
     isLibrary		    0
     sfVersion		    80000011
