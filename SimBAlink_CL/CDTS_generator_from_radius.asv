@@ -30,18 +30,17 @@ for i=(length(Dist)-1):-1:1
 end
 
 %create clock signal array for simulink
-simulinkCLOCK(1) = 0;
-for i=2:1:length(Dist)
-    simulinkCLOCK(i) = simulinkCLOCK(i-1) + 1;
-end
-     
+t_cyc = 
+for i=1:1:length(Dist)
+    t_cyc
+    
+    
 %write necessary vectors and clear unnecessary-----------
 %save to velocity profile--------------------------------
-t_cyc = simulinkCLOCK.';
 v_cyc = CDTS_ms;
 d_cyc = Dist;
 
-clearvars -except t_cyc v_cyc d_cyc
+clearvars -except v_cyc d_cyc
 
 
 
