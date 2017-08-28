@@ -7,9 +7,6 @@
 % clc
 
 
-
-
-
 %% Initialization file for selecting driving cycles (velocity and time)
 
 
@@ -35,13 +32,13 @@
             load Velocity_Profiles/US06_Highway_Cycle;
         
         elseif DRIV_Cycle == 8
-           load Velocity_Profiles/Artemis_urban;
+           load Velocity_Profiles/Artemis_urban
            
         elseif DRIV_Cycle == 9
-           load Velocity_Profiles/Artemis_extra_urban;
+           load Velocity_Profiles/Artemis_extra_urban
            
         elseif DRIV_Cycle == 10
-           load Velocity_Profiles/Artemis_highway;
+           load Velocity_Profiles/Artemis_highway
         
         elseif DRIV_Cycle == 11
            load Velocity_Profiles/NEDC;
@@ -58,25 +55,44 @@
            Stoptime = 60;
         end
         
+%% Initialization for Selecting Vehicles (Mass, Effective Mass, Frontal Area)
+  
+          if VEH_Selection == 1 % Sedan
+            load Vehicle_Data/sportbike_generic;
+
+        elseif VEH_Selection == 2 % EcoCAR2
+            load Vehicle_Data/EXR100;
+            
+        elseif VEH_Selection == 3 % SU
+              load Vehicle_Data/RW-3x;
+              
+          end
 %% Initialization for Selecting Road Grade Conditions (Alpha)
 %grade angle in degrees (positive angle correponds to ascend)
  
     Road_Grade = Grade_Value;
-       
+
+%% Enviormental and road Conditions
+          if ENV_Selection == 1 
+            load Environment_Data/PikesPeak.mat
+
+        elseif ENV_Selection == 2 
+            load Environment_Data/TRC_VDA.mat
+            
+        end
+          
+            
+%% Engine Data
+load Transmission_Data/TRAN_Data;
+% load Engine_Data/ICE_Data;
+% load Engine_Data/ICE_Data_honda_1800_E85_1_11_11
+load Engine_Data/ICE_Data_modified
 %% EM Data
-        if EM_MC_Selection == 1
-            load Electric_Machine_Data/emrax268_PM150DZR;
-        
-        elseif EM_MC_Selection == 2
-            load Electric_Machine_Data/ME708_KDS48200e;            
-            
-        end
-            
-%% Cell Data
-        if CELL_Selection == 1
-            load Cell_Data/LiFePo4_generic;
-        
-        elseif CELL_Selection == 2
-            load Cell_Data/A123_ANR2660;            
-            
-        end
+load Electric_Machine_Data/FEM.mat
+load Electric_Machine_Data/REM.mat
+load Electric_Machine_Data/FEM_GB.mat
+load Electric_Machine_Data/REM_GB.mat
+%% Battery Data
+load Battery_Data/Battery_Data.mat
+load Battery_Data/Battery_OCV_Curve.mat
+load Battery_Data/Battery_Thermal_Data.mat
