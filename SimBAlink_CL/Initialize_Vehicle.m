@@ -10,10 +10,10 @@
             
 %% Cell Data
         if CELL_Selection == 1
-            load Cell_Data/LiFePo4_generic;
+            load Cell_Data/LiFePo4_generic_2pt5Ah;
         
         elseif CELL_Selection == 2
-            load Cell_Data/A123_ANR2660;            
+            load Cell_Data/A123_26650_2pt5Ah;            
             
         end
         
