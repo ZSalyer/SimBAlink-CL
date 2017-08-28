@@ -1,15 +1,3 @@
-%% Initialization_Ideal_Powertrain.m in Ideal Powertrain Folder
-%==========================================================================
-%==========================================================================
-%% Constant vehicle Parameters
-% clear all
-% close all
-% clc
-
-
-
-
-
 %% Initialization file for selecting driving cycles (velocity and time)
 
 
@@ -62,21 +50,9 @@
 %grade angle in degrees (positive angle correponds to ascend)
  
     Road_Grade = Grade_Value;
-       
-%% EM Data
-        if EM_MC_Selection == 1
-            load Electric_Machine_Data/emrax268_PM150DZR;
-        
-        elseif EM_MC_Selection == 2
-            load Electric_Machine_Data/ME708_KDS48200e;            
-            
-        end
-            
-%% Cell Data
-        if CELL_Selection == 1
-            load Cell_Data/LiFePo4_generic;
-        
-        elseif CELL_Selection == 2
-            load Cell_Data/A123_ANR2660;            
-            
-        end
+    
+%% Initialization for Setting Ambient Temperature
+%grade angle in degrees (positive angle correponds to ascend)
+ 
+    ambTemp_K = ambTemp_C + 273.5;
+
