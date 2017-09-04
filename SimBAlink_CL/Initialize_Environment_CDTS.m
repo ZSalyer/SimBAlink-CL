@@ -5,7 +5,7 @@
            load CDTS_Profiles/PPIHC_CDTS_1g;
 
         elseif CDTS_Profile == 2
-             load CDTS_Profiles/CRP_1g;
+             load CDTS_Profiles/CRP_CDTS_1g;
 
         end
        
