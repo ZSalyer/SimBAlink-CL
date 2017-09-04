@@ -33,9 +33,6 @@
         
         elseif DRIV_Cycle == 11
            load Velocity_Profiles/NEDC;
-        
-        elseif DRIV_Cycle == 12
-           load Velocity_Profiles/PPIHC_CDTS;
            
         end
         
