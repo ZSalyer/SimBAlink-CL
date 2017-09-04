@@ -40,8 +40,9 @@
         end
         
 %         Stoptime = length(v_cyc);
+        timeStep = t_cyc(2) - t_cyc(1);
         if DRIV_acc_flag ==0
-           Stoptime = length(v_cyc)*iteration;
+           Stoptime = length(v_cyc)*iteration*timeStep;
         else
            Stoptime = 60;
         end
