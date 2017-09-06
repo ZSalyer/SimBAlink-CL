@@ -4,8 +4,8 @@ maxLatAccel = 9.8;  %max lateral acceleration in m/s^2
 maxBrakeAccel = 9.8;    %max braking acceleration in m/s^2
 
 %Set data sets to imported arrays------
-Dist = distance;
-cornerRadius = radius;
+Dist = dist_interp_m;
+cornerRadius = radius_interp_m;
 %--------------------------------------
 
 
