@@ -21,18 +21,16 @@
         %Add fake t_cyc vector so simulation does not error on load
         t_cyc = d_cyc;
         end
-        
-        %set simulation stop distance
-        Stopdistance = d_cyc(length(d_cyc)-1);
+       
 
 %% Initialization for selected driving cycles (velocity and time)
     % (add new entries in nested conditonal below)
 
-        if DRIV_Cycle == 0 %Do not delete
+        if DRIV_Cycle == 0 
             %set to zero when distance-dependant velocity input selected
             %Skip loading DRIV_Cycle so CDTS_Profile is not overwritten
-        else
-            
+        
+        else            
 %%% -----------ADD NEW ENTRIES HERE--------------------------------
 %%% ---------------------------------------------------------------
             if DRIV_Cycle == 1
@@ -76,10 +74,11 @@
 %%% ---------------------------------------------------------------
 %%% ---------------------------------------------------------------
         
-        %Add fake t_cyc vector so simulation does not error on load
-        t_cyc = d_cyc;
+        %Add fake d_cyc vector so simulation does not error on load
+        d_cyc = t_cyc;
         end
-        
+
+%% Specify simulation temination points
 %       Stoptime = length(v_cyc);
         timeStep = t_cyc(2) - t_cyc(1);
         if DRIV_acc_flag ==0
@@ -87,6 +86,9 @@
         else
            Stoptime = 60;
         end
+        
+        %set simulation stop distance
+        Stopdistance = d_cyc(length(d_cyc)-1);
         
 %% Initialization for Selecting Road Grade Conditions (Alpha)
 %grade angle in degrees (positive angle correponds to ascend)
