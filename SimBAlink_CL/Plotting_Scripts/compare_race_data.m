@@ -2,7 +2,7 @@
 close all;
 
 %%%Load old race data first
-load('C:\Users\bring\Google Drive\Buckeye_Current\Tech\Test_Data\2017PPIHC_RW-3x2\PPIHC2017_RW3x2_RaceData_allVarStruct_raceOnly.mat')
+load('\PPIHC2017_RW3x2_RaceData_allVarStruct_raceOnly.mat')
 
 %% Motor Controller
 %Controller Temp
