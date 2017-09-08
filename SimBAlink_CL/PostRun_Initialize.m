@@ -1,7 +1,7 @@
 %Post processing script run after simulation end/termination
 
 %% Autoplotting Functions
-    %compare_race_data
+    compare_race_data
 
 
 %% SOC Depleted Error 
