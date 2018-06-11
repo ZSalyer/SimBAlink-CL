@@ -9,6 +9,7 @@
             load Cell_Data/LiFePo4_generic_2pt5Ah;
         elseif CELL_Selection == 2
             load Cell_Data/A123_ANR26650;
-        
+        elseif CELL_Selection == 3
+            load Cell_Data/LMO_26650_generic_4pt2Ah;
         end
         
