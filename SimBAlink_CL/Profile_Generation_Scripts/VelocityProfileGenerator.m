@@ -1,14 +1,14 @@
 %Velocity Profile from Corner-Radius Profile - Buckeye Current
 %Created by Zach Salyer - 7/11/2018
 
-clearvars -except CornerRadius;
+clearvars;
 clc;
 close all;
 
 %% Load Corner-Radius Profile Script
-%[file, path] = uigetfile();
-%filename = fullfile(path, file);
-%CornerRadius = importdata(filename); %Assumes Corner-Radius is in array with distance in first column and radius in second
+[file, path] = uigetfile();
+filename = fullfile(path, file);
+CornerRadius = importdata(filename); %Assumes Corner-Radius is in array with distance in first column and radius in second
 
 %% Find Apexes of Track
 %Find troughs of corner radius profile to find smallest radii aka the apex
