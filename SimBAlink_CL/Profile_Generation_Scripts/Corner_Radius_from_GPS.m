@@ -27,8 +27,8 @@ flat_interp = interp1(cumSum,flat,linspace(0,cumSum(end),10000),'pchip');
 cumSum_interp = cat(1,0,cumsum(sqrt(sum(diff(flat_interp).^2,2))));
 
 % Plot interpolated flat earth data
+figure('color','w')
 scatter(flat_interp(:,1),flat_interp(:,2),[],flat_interp(:,3),'fill')
-grid on
 xlabel('X-Pos. [m] (from Lon.)')
 ylabel('Y-Pos. [m] (from Lat.)')
 cb.handle = colorbar;
@@ -46,8 +46,72 @@ file_out.address = fullfile(file_out.path,file_out.name);
 save(file_out.address,'GPS_Flat_Interp')
 
 %% Compute Corner Radius
+% Filter inputs
+filt.corner_rad_mn = 7; % minimum corner radius [m]
+filt.lat_accel_mx = 1.5; % max allowable lateral acceleration [g]
+filt.pt_ct_corner = 20; % number of points used in corner radius cicle fit
+filt.pt_ct_roll = 5; % size of filtering window
+filt.std_dev = 0.8; % number of std dev allowed from rolling ave
 
+% Curve fit constant radius to rolling point group
+fit.pt_ct = filt.pt_ct_corner;
+n = length(cumSum_interp);
+for i = 1:n
+    if i < fit.pt_ct + 1
+        fit.x = GPS_Flat_Interp.y(1:i);
+        fit.y = GPS_Flat_Interp.y(1:i);
+    else
+        fit.x = GPS_Flat_Interp.x((i - fit.pt_ct):i);
+        fit.y = GPS_Flat_Interp.y((i - fit.pt_ct):i);
+    end
+    fit.A = [fit.x fit.y ones(size(fit.x))]\(-(fit.x.^2 + fit.y.^2));
+    fit.R(1,i) = sqrt((fit.A(1)^2 + fit.A(2)^2)/4 - fit.A(3));
+end
 
+% Filter corner radii below minimum allowed
+k = 1;
+for i = 1:n
+    if fit.R(i) >= filt.corner_rad_mn
+        fit.R_f(1,k) = cumSum_interp(i);
+        fit.R_f(2,k) = fit.R(i);
+        k = k + 1;
+    end
+end
+fit.R = interp1(fit.R_f(1,:),fit.R_f(2,:),cumSum_interp);
 
+% Filter corner radii outside of 1 standard deviation from rolling average
+k = 1;
+for i = 1:n
+    if i < filt.pt_ct_roll + 1
+        fit.R_ave = mean(fit.R(1:i));
+        fit.R_std = std(fit.R(1:i));
+    else
+        fit.R_ave = mean(fit.R((i - filt.pt_ct_roll):i));
+        fit.R_std = std(fit.R((i - filt.pt_ct_roll):i));
+    end
+    if fit.R(i) >= (fit.R_ave - filt.std_dev*fit.R_std) && fit.R(i) <= (fit.R_ave + filt.std_dev*fit.R_std)
+        fit.R_ff(1,k) = cumSum_interp(i);
+        fit.R_ff(2,k) = fit.R(i);
+        k = k + 1;
+    end
+end
+
+fit.R = interp1(fit.R_ff(1,:),fit.R_ff(2,:),cumSum_interp);
+
+R_n = max(fit.R)./fit.R;
+figure('color','w')
+plot(GPS_Flat_Interp.x,GPS_Flat_Interp.y)
+hold on
+plot(GPS_Flat_Interp.x,GPS_Flat_Interp.y+R_n*10)
+hold off
+
+% Export corner radius profile
+distance = cumSum_interp;
+radius = fit.R;
+
+waitfor(msgbox('Press OK then choose location and name used to save the corner radius profile data.','Export Data File'));
+[file_out.name,file_out.path] = uiputfile('*.mat');
+file_out.address = fullfile(file_out.path,file_out.name);
+save(file_out.address,'radius','distance')
 
 
